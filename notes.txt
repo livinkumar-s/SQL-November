@@ -1,0 +1,52 @@
+Database
+-------------
+It is an organized collection of data that can be easily accessed, managed and updated.
+
+RDBMS --> RELATIONAL DATABASE MANAGEMENT SYSTEM
+-------------------------------------------------
+>>Stores data in form of tables(Rows and Columns)
+>>SQL --> Structured Query Language
+Ex: MySQL, Excel....
+
+DBMS 
+----
+>>Stores data in form of Docs or Object
+Ex: MongoDB(BSON)...
+
+SQL
+-----
+>> SQL is case-insensitive.(a=A)
+>> Every Query should end with ;
+Ex: SELECT * FROM tbname;
+
+Datatype
+---------
+Numeric Datatype 
+------------------
+INT --> whole numbers. Ex: -1,0,3,4,5
+BIGINT --> large whole numbers.
+FLOAT --> Decimal numbers. Ex: 3.14...
+DOUBLE --> Large Decimal numbers
+
+String Datatypes
+-----------------
+CHAR(len) --> Fixed length char string. Ex: char(5) ---> "hello"
+VARCHAR(len) --> Variable length char string. Ex: varchar(5) -->"hi","hello"
+TEXT --> paragraph
+
+Boolean
+----------
+BOOLEAN --> 1 or 0
+
+DATE and TIME
+----------------
+DATE --> Date in form of string. Ex: 'yyyy-mm-dd'
+TIME --> "HH:MM:SS"
+DATETIME --> both
+
+DATABASE --> Tables --> data
+(Schema)
+
+Queries
+--------
+To Create Database--> CREATE DATABASE dbname;
