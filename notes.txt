@@ -47,6 +47,43 @@ DATETIME --> both
 DATABASE --> Tables --> data
 (Schema)
 
+Operators
+----------
+= equal   
+<>,!= not equal
+< lesser than
+> greater than 
+<= less or equal 
+>= greater or equal
+
+Constraint
+-----------
+Primary Key --> Unique and Not Null. It identifies each rows uniquely. Only once in a table
+
 Queries
 --------
 To Create Database--> CREATE DATABASE dbname;
+To Select database--> USE dbname;
+To Create Table --> CREATE TABLE tbName (
+    col1 datatype contraint...,
+    col2 dtatype Constraint,
+    .
+    .
+);
+
+To Insert Row Into Table --> INSERT INTO tbname (col detail(optional))  VALUES (d1),(d2)...;
+To Retrive Data From Table --> SELECT (col details) FROM tbname;
+To Update Data -->  UPDATE tbname SET col=val,col=val.......;
+To Delete Data --> DELETE FROM tbname;
+
+CRUD 
+-----
+CREATE --> INSERT
+READ --> SELECT
+UPDATE --> UPDATE 
+(sql_safe_updates--> On. cannot update or delete more than one row. filteration is must. condition must be depends on PK)
+DELETE --> DELETE
+
+FILTERATION (ROWS)
+------------------
+WHERE --> Ex:.... WHERE condition;
