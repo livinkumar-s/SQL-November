@@ -49,12 +49,48 @@ DATABASE --> Tables --> data
 
 Operators
 ----------
+
+Comparison Operators
+-----------------------
 = equal   
 <>,!= not equal
 < lesser than
 > greater than 
 <= less or equal 
 >= greater or equal
+
+Logical Operators
+-----------------
+and --> When Both Conditions Are True --> true.
+or --> When any one condition is True --> true.
+not --> reverting the bool. True --> False
+
+BETWEEN
+--------
+>> To check oif a value within a range.(inclusive)
+Ex: ... WHERE col BETWEEN num1 AND num2;
+
+IN Operator
+------------
+To match any value from a list of values.
+Ex: ... WHERE col IN (val1,val2......);
+
+LIKE Operator (Pattern Matching)
+-------------------------------
+Used for text pattern searches with wildcards.
+
+% --> match 0 to infinite characters.
+_ --> match exactly 1 character.
+
+"v%" -->"vijay", "v"
+"tara", "sara" ---> "___a"
+
+Ex: ... WHERE col LIKE pattern;
+
+ORDER BY --> Ex: ..... ORDER BY col ASC/DESC;
+
+LIMIT ---> used to limit the number of results.
+OFFSET --> It is used to skip the rows.
 
 Constraint
 -----------
@@ -87,3 +123,4 @@ DELETE --> DELETE
 FILTERATION (ROWS)
 ------------------
 WHERE --> Ex:.... WHERE condition;
+Filter rows that meet a specific condition.
