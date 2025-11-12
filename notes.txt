@@ -124,3 +124,34 @@ FILTERATION (ROWS)
 ------------------
 WHERE --> Ex:.... WHERE condition;
 Filter rows that meet a specific condition.
+
+Functions
+-----------
+>> These are predefined operations that performs calculations or modify data and return single value.
+
+Numeric Functions
+--------------------
+ABS(num) Absolute --> Ex: abs(-9)--> 9
+ROUND(decNum) --> Round off to the nearest integer. 16.45555--> 16
+CEIL(decNum) -->round off to next int. Ex: 14.00000001 --> 15
+FLOOR(decNum) --> Round off to previous int. 12.999999999--> 12 
+MOD(num1,num2) --> Reminder. Ex: mod(45,4) -->1
+POWER(num1,num2) --> num1 raised to num2. power(4,4)--> 64
+RAND() --> random number between 0-1
+
+String Functions
+------------------
+LENGTH(str) --> number of char in that string.
+UPPER(str)  --> converts str into uppercase
+LOWER(str)
+CONCAT(str1,str2,str3.........) --> attaches multiple strings together
+SUBSTRING(str,start,len)--> "hello world"  --> "hello"
+REPLACE(str, old, new)--> "Hello world"  --> "Hi world"
+TRIM(str) --> remove whitespaces at begenning and ending
+
+Date and Time Methods
+-----------------------
+CURDATE() --> current date
+CURTIME() --> current time
+NOW() -->  both 
+DATEDIFF(d1,d2)---> difference between 2 dates in days
