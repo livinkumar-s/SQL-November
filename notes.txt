@@ -92,9 +92,27 @@ ORDER BY --> Ex: ..... ORDER BY col ASC/DESC;
 LIMIT ---> used to limit the number of results.
 OFFSET --> It is used to skip the rows.
 
-Constraint
------------
-Primary Key --> Unique and Not Null. It identifies each rows uniquely. Only once in a table
+
+
+Contraints 
+--------------
+>> Constraints are rules applied to a table column to maintain data integrity and accuracy.
+
+1) PRIMARY KEY --> UNIQUE, NOT NULL. It is used to identify each rows uniquely. Only one primary key per table.
+
+2) AUTO_INCREMENT --> Automatically increases the numeric value by 1 for every new record.
+
+3) NOT NULL --> ensures a column cannot have NULL value.
+
+4) UNIQUE --> ensures all values in a column are different.
+
+5) DEFAULT --> assigning default value for a column.
+
+6) CHECK --> Ensures a column's value meet a condition
+
+7) FOREIGN KEY --> A foreign key in a table  refers to primary key in another table.
+Ex: foreign key (col) reference (col)
+
 
 Queries
 --------
@@ -155,3 +173,27 @@ CURDATE() --> current date
 CURTIME() --> current time
 NOW() -->  both 
 DATEDIFF(d1,d2)---> difference between 2 dates in days
+
+
+
+
+actordetails
+-------------
+id(pk)
+1	        Vijaykanth	    vk@gmail.com	0	154
+2	        siranjeevi	    sir@gmail.com	0	124
+3	        silambarasan	simbu@gmail.com	1	46
+4	        vjs	            vs@gmail.com	1	50
+5	        surya	        sr@gmail.com	1	52
+7	        vijay	        vj@gmail.com	1	68
+
+
+latestmovie
+--------------
+
+id(pk)   moviename    actorId(foreign)
+1        GOAT         7
+2        Retro        5
+3        GBU          10(rejected)(no matching record)
+
+name moviename
