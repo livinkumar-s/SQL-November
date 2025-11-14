@@ -174,26 +174,38 @@ CURTIME() --> current time
 NOW() -->  both 
 DATEDIFF(d1,d2)---> difference between 2 dates in days
 
+Joins
+-------
+>> A join in MySQL is used to combine data from two or more tables based on related column.
+
+Inner Join
+-----------
+>> It returns only matching rows from both tables.
+Ex: select col det FROM tb1 INNER JOIN tb2 ON exp;
+
+Left Join
+-----------
+>> It returns all rows from left. Matching rows from right table. Null where no match found.
+Ex: select col det FROM tb1 LEFT JOIN tb2 ON exp;
+
+Right Join
+-----------
+>> It returns all rows from right. Matching rows from left table. Null where no match found.
+Ex: select col det FROM tb1 RIGHT JOIN tb2 ON exp;
+
+CROSS JOIN 
+------------
+>> No need for related columns. matchs all rows from left table to all from right table.
+Ex: SELECT * FROM tb1 CROSS JOIN tb2;
 
 
+color:
+--------
+red 
+blue 
+green
 
-actordetails
--------------
-id(pk)
-1	        Vijaykanth	    vk@gmail.com	0	154
-2	        siranjeevi	    sir@gmail.com	0	124
-3	        silambarasan	simbu@gmail.com	1	46
-4	        vjs	            vs@gmail.com	1	50
-5	        surya	        sr@gmail.com	1	52
-7	        vijay	        vj@gmail.com	1	68
-
-
-latestmovie
---------------
-
-id(pk)   moviename    actorId(foreign)
-1        GOAT         7
-2        Retro        5
-3        GBU          10(rejected)(no matching record)
-
-name moviename
+size:
+------
+xl
+xxl
