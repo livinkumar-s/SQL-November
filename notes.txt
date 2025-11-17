@@ -199,13 +199,22 @@ CROSS JOIN
 Ex: SELECT * FROM tb1 CROSS JOIN tb2;
 
 
-color:
---------
-red 
-blue 
-green
+Aggregate Functions
+--------------------
+>> Aggregate Functions performs a calculation on a set of rows and return a single value.
 
-size:
-------
-xl
-xxl
+COUNT --> no of records. no of values in a column(ignore null);
+AVG(col) --> average value of a numeric column.
+MAX(col) --> returns maximum value.
+MIN(col) --> returns minimum value.
+SUM(col) --> returns the sum of numeric column.
+
+GROUP BY 
+----------
+>> It groups rows having the same vale.
+Ex: select category, count(*) as noOfProducts, sum(price) as totalPrice,
+avg(price) as averagePrice from products group by category;
+
+
+WHERE --> filter rows
+HAVING cond --> to filter grouops
