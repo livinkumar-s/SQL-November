@@ -215,6 +215,35 @@ GROUP BY
 Ex: select category, count(*) as noOfProducts, sum(price) as totalPrice,
 avg(price) as averagePrice from products group by category;
 
-
 WHERE --> filter rows
-HAVING cond --> to filter grouops
+HAVING cond --> to filter groups
+
+Sub Queries 
+-------------
+>> A subquery is a query written inside another query.
+Ex: main query...(subquery)
+
+Single Row Subquery 
+--------------------
+>> Subquery returns only one row.
+Ex: select * from product where 
+id=(select productId from details order by price desc limit 1);
+
+Multi row subquery
+------------------
+>> Subquery that returns multiple row.
+Ex: select * from product where id in 
+(select productId from details where bestSeller=1);
+
+ANY 
+----
+>> At least one value matches the condition.
+Ex: Find students whose marks are greater than ANY student in EEE;
+
+ALL
+----
+>> Every values match the condition.
+Ex: Find students whose marks are greater than ALL student in EEE;
+
+Correlated Sub Queries
+-----------------------
