@@ -247,3 +247,6 @@ Ex: Find students whose marks are greater than ALL student in EEE;
 
 Correlated Sub Queries
 -----------------------
+>> It is a subquery that depends on the outer query for its value.
+Ex: select * from students s1 where marks > 
+(select avg(marks) from students s2 where dept=s1.dept);

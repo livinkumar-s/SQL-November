@@ -49,7 +49,7 @@ insert into students (name, marks, dept) values
 ("nila",70,'CSE'), 
 ("dinesh",69,'CSE'), 
 ("naveen",88,'CSE'), 
-("prem",100,'CSE'), 
+("prem",100,'C SE'), 
 ("henry",91,'EEE'), 
 ("vinod",48,'EEE');
 
@@ -61,4 +61,5 @@ select * from students where marks > ANY
 select * from students where marks >= ALL 
 (select marks from students where dept='ECE');
 
-
+select * from students s1 where marks > 
+(select avg(marks) from students s2 where dept=s1.dept);
