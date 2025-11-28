@@ -250,3 +250,10 @@ Correlated Sub Queries
 >> It is a subquery that depends on the outer query for its value.
 Ex: select * from students s1 where marks > 
 (select avg(marks) from students s2 where dept=s1.dept);
+
+Views
+------
+>> It acts as a virtual table created from an SQL query.
+It does not store a physical data. It stores a query.
+
+CREATE VIEW viewName AS select....;
