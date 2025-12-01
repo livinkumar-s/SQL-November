@@ -257,3 +257,23 @@ Views
 It does not store a physical data. It stores a query.
 
 CREATE VIEW viewName AS select....;
+
+
+
+Contact App MySQL, Python 
+----------------------------
+pip install mysql-connector-python --> to install the package.
+
+
+
+
+
+1 add contact
+2 view all contacts 
+3 delete contact 
+4 search contact
+
+1--> name and phone inputs ---> add that contact to the table 
+2--> show all the contacts 1 by one 
+3--> id prompt --> that data shoyuld be deleted 
+4--> name input ---> show contact details
